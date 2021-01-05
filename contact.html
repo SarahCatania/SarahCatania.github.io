@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width-device-width, initial-scale=1.0">
+	<title>Contact</title>
+	<link rel="stylesheet" href="css/contact-styles.css">
+	<link rel="stylesheet" href="css/styles.css">
+	<script src="https://kit.fontawesome.com/e16e3cfc8e.js" crossorigin="anonymous"></script>
+	<link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700i" rel="stylesheet">
+</head>
+<body>
+	<header class="header">
+		<nav class="navigation">
+
+			<section class="logo"></section>
+			<section class="navigation_icon">
+				<span class="topBar"></span>
+				<span class="middleBar"></span>
+				<span class="bottomBar"></span>
+			</section>
+
+			<ul class="navigation_ul">
+				<li><a href ="index.html">HOME</a></li>
+				<li><a href ="projects.html">PROJECTS</a></li>
+				<li><a href ="contact.html">CONTACT</a></li>
+			</ul>
+
+			<section class="navigation_social">
+				<ul class="navigation_social-ul">
+					<li>
+						<a href="" class="social-icon"></a>
+					</li>
+					<li>
+						<a href="" class="social-icon"></a>
+					</li>
+					<li>
+						<a href="" class="social-icon"></a>
+					</li>
+					<li>
+						<a href="" class="social-icon"></a>
+					</li>
+				</ul>
+			</section>
+		</nav>
+	</header>
+	<div class="social-menu">
+		<ul>
+			<li><a href="https://www.linkedin.com/in/sarah-c-04402b174/"><i class="fab fa-linkedin-in"></i></a></li>
+			<li><a href="https://www.instagram.com/catania_sarita/"><i class="fab fa-instagram"></i></a></li>
+			<li><a href="https://github.com/SarahCatania"><i class="fab fa-github"></i></a></li>
+		</ul>
+	</div>
+
+		<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+		<script>
+			$(function()
+			{
+				$(".navigation_icon").click(function()
+				{
+					$(".navigation").toggleClass('navigation-open');
+				});
+			});
+		</script>
+</body>
+</html>

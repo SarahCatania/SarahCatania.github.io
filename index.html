@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF=8">
+	<title>Sarah Catania-Orozco</title>
+	<link href="css/styles.css" rel="stylesheet" type="text/css">
+	<link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700i" rel="stylesheet">
+	<style>
+		body
+		{
+			animation: 80s background-multicolor infinite;
+			height:100%;
+			overflow: hidden;
+		}
+
+		.header
+		{
+			width:100vw;
+			height:100vh;
+			background-size:cover;
+			position:relative;
+		}
+
+		.navigation-open
+		{
+			width:20%;
+			height:100%;
+			display:block;
+			background:white;
+			position:absolute;
+			left:0;
+			border-radius:0% 1% 1% 0%;
+		}
+
+	</style>
+</head>
+<body>
+	<header class="header">
+		<section class="portfolio-header"> 
+			<h2 class="portfolio-header-title">SARAH <span> CATANIA</span> </h2>
+			<h3 class="portfolio-header-subtitle"> Electrical Engineering Major </h3>
+			<img class="sc-logo" src="image/sc.gif"/>
+		</section>
+		<nav class="navigation">
+			<section class="logo"></section>
+			<section class="navigation_icon">
+				<span class="topBar"></span>
+				<span class="middleBar"></span>
+				<span class="bottomBar"></span>
+			</section>
+
+			<ul class="navigation_ul">
+				<li><a href ="index.html">HOME</a></li>
+				<li><a href ="projects.html">PROJECTS</a></li>
+				<li><a href ="contact.html">CONTACT</a></li>
+			</ul>
+
+			<section class="navigation_social">
+				<ul class="navigation_social-ul">
+					<li>
+						<a href="" class="social-icon"></a>
+					</li>
+					<li>
+						<a href="" class="social-icon"></a>
+					</li>
+					<li>
+						<a href="" class="social-icon"></a>
+					</li>
+					<li>
+						<a href="" class="social-icon"></a>
+					</li>
+				</ul>
+			</section>
+		</nav>
+
+</header>
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<script>
+		$(function()
+		{
+			$(".navigation_icon").click(function()
+			{
+				$(".navigation").toggleClass('navigation-open');
+			});
+		});
+	</script>
+
+</body>
+</html>
